@@ -1,11 +1,23 @@
 import { FC } from 'react';
-import { Basketball, Dumbbell, IIconProps, Running, Swimming, Walking, Yoga } from 'shared/components/icons/icons';
+import {
+	Basketball,
+	Cycling,
+	Dumbbell,
+	IIconProps,
+	Running,
+	Soccer,
+	Swimming,
+	Walking,
+	Yoga
+} from 'shared/components/icons/icons';
 
-export const ActivityIcon: { [key: string]: FC<IIconProps> } = {
+export const ActivityIconList: { [key: string]: FC<IIconProps> } = {
 	Walking: Walking,
 	Running: Running,
-	Dumbbell: Dumbbell,
+	'Strength Training': Dumbbell,
 	Swimming: Swimming,
 	Basketball: Basketball,
-	Yoga: Yoga
+	Yoga: Yoga,
+	Cycling: Cycling,
+	Soccer: Soccer
 };

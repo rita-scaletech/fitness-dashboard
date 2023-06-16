@@ -1,6 +1,7 @@
 export interface IAuthState {
 	isLogin: boolean;
 	userData: IUserData;
+	userDetails: IUserDetails;
 }
 
 export interface ILoginResponse {
@@ -16,4 +17,14 @@ export interface IUserData {
 	avatar: string | null;
 	name: string;
 	token: string;
+}
+
+export interface IUserDetails {
+	id: string;
+	name: string;
+	email: string;
+	age: number;
+	height: number;
+	weight: number;
+	image: string;
 }

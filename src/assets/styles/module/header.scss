@@ -9,3 +9,27 @@
 		background: #6f8399;
 	}
 }
+
+.profile-modal {
+	height: 100vh;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	color: $black;
+
+	.modal-dialog {
+		width: 100%;
+		max-width: 500px;
+		height: 500px;
+		background-color: $white;
+		border-radius: 13px;
+		margin: 0 auto;
+
+		.profile--wrapper {
+			.profile-image {
+				height: 100px;
+				width: 100px;
+			}
+		}
+	}
+}

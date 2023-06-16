@@ -2,11 +2,12 @@ import { IAction } from 'shared/interface/state';
 import AuthService from 'shared/services/auth.service';
 
 import * as actionTypes from 'store/actionTypes';
-import { IAuthState, IUserData } from '../interface/auth';
+import { IAuthState, IUserData, IUserDetails } from '../interface/auth';
 
 const initialState: IAuthState = {
 	isLogin: AuthService.isLogin(),
-	userData: {} as IUserData
+	userData: {} as IUserData,
+	userDetails: {} as IUserDetails
 };
 
 const reducer = (state: IAuthState = initialState, action: IAction) => {
@@ -30,6 +31,11 @@ const reducer = (state: IAuthState = initialState, action: IAction) => {
 			return {
 				...state,
 				isLogin: false
+			};
+		case actionTypes.USER_DATA:
+			return {
+				...state,
+				userDetails: action.payload
 			};
 		default:
 			return state;

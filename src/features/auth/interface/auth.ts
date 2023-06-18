@@ -26,5 +26,4 @@ export interface IUserDetails {
 	age: number;
 	height: number;
 	weight: number;
-	image: string;
 }

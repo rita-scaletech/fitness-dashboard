@@ -11,7 +11,7 @@ interface IProfileProps {
 
 const UserDetails: FC<IProfileProps> = ({ handleClose }) => {
 	const userDetails = useSelector((state: IState) => state.auth.userDetails);
-	const { age, email, height, name, weight, image } = userDetails;
+	const { age, email, height, name, weight } = userDetails;
 
 	return (
 		<CustomModal show={true} handleClose={handleClose} className='profile-modal'>

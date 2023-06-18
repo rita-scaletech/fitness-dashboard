@@ -1,9 +1,12 @@
 import { FC } from 'react';
 import {
 	Basketball,
+	CrossFit,
 	Cycling,
+	Dancing,
 	Dumbbell,
 	IIconProps,
+	Kickboxing,
 	Running,
 	Soccer,
 	Swimming,
@@ -19,5 +22,8 @@ export const ActivityIconList: { [key: string]: FC<IIconProps> } = {
 	Basketball: Basketball,
 	Yoga: Yoga,
 	Cycling: Cycling,
-	Soccer: Soccer
+	Soccer: Soccer,
+	CrossFit: CrossFit,
+	Dancing: Dancing,
+	Kickboxing: Kickboxing
 };
